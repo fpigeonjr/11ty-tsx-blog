@@ -1,0 +1,18 @@
+{
+  "name": "11ty-tsx-blog",
+  "version": "1.0.0",
+  "description": "learning 11ty, esm, ts/tsx",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --incremental"
+  },
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.6"
+  },
+  "devDependencies": {
+		"prettier": "^3.2.5"
+	},
+  "author": "Frank Pigeon <frank.pigeonjr@gmail.com>",
+  "license": "ISC"
+}
