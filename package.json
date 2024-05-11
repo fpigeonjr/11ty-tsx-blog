@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "learning 11ty, esm, ts/tsx",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve --incremental"
+    "build": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts",
+    "start": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve --incremental"
   },
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0-alpha.6"
+    "@11ty/eleventy": "^3.0.0-alpha.6",
+    "jsx-async-runtime": "^0.2.1"
   },
   "devDependencies": {
-		"prettier": "^3.2.5"
-	},
+    "prettier": "^3.2.5",
+    "tsx": "^4.10.0"
+  },
   "author": "Frank Pigeon <frank.pigeonjr@gmail.com>",
   "license": "ISC"
 }
