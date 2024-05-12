@@ -13,6 +13,8 @@
     "jsx-async-runtime": "^0.2.1"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.1.0",
+    "happy-dom": "^14.10.1",
     "prettier": "^3.2.5",
     "tsx": "^4.10.0",
     "vitest": "^1.6.0"
