@@ -1,6 +1,6 @@
 ---
-title: My Site
+title: Home
 layout: MainLayout.11ty.tsx
 ---
 
-This is a _very_ nice site!
+Welcome to my Eleventy blog.
