@@ -3,7 +3,7 @@ export type HeadingProps = {
 }
 
 function Heading({ name = "TSX" }: HeadingProps): JSX.Element {
-  return <h1>Hello {name}</h1>
+  return <h1>{name}</h1>
 }
 
 export default Heading
