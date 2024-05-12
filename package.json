@@ -4,7 +4,8 @@
   "description": "learning 11ty, esm, ts/tsx",
   "scripts": {
     "build": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts",
-    "start": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve --incremental"
+    "start": "tsx node_modules/@11ty/eleventy/cmd.cjs --config=eleventy.config.ts --serve --incremental",
+    "test": "vitest run"
   },
   "type": "module",
   "dependencies": {
@@ -13,7 +14,8 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "tsx": "^4.10.0"
+    "tsx": "^4.10.0",
+    "vitest": "^1.6.0"
   },
   "author": "Frank Pigeon <frank.pigeonjr@gmail.com>",
   "license": "ISC"

@@ -1,3 +1,5 @@
-export function render(): JSX.Element {
-  return <h1>Hello World from TSX Land</h1>
+export function Index(): JSX.Element {
+  return <h1>Hello TSX</h1>
 }
+
+export const render = Index
