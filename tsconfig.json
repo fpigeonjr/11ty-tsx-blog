@@ -7,5 +7,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "jsx-async-runtime"
   },
+  "include": ["components", "site"],
   "exclude": ["node_modules", "_site"]
 }
