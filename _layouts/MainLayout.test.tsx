@@ -6,11 +6,12 @@ import { ViewProps } from "../eleventy"
 
 test("render MainLayout", async () => {
   const viewProps: ViewProps = {
+    title: "Hello World",
     content: "<p>This is <em>the body</em></p>",
-    title: "My Site",
   }
   const result = MainLayout(viewProps)
   document.body.innerHTML = await renderToString(result)
-  expect(screen.getByText(`Hello My Site`)).to.exist
+  const titleElements = screen.getAllByText(`Hello World`)
+  expect(titleElements).to.have.length(2)
   expect(screen.getByText(`the body`)).to.exist
 })

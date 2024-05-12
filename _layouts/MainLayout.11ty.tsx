@@ -1,7 +1,8 @@
 import { ViewProps } from "../eleventy"
 import Heading from "../components/Heading"
+import Footer from "../components/Footer"
 
-function MainLayout({ content, title }: ViewProps): JSX.Element {
+function MainLayout({ title, content }: ViewProps): JSX.Element {
   return (
     <html lang="en">
       <head>
@@ -14,6 +15,7 @@ function MainLayout({ content, title }: ViewProps): JSX.Element {
       </head>
       <Heading name={title} />
       <body>{content}</body>
+      <Footer />
     </html>
   )
 }
