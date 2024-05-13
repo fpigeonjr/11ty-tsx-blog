@@ -10,9 +10,6 @@ export default function (eleventyConfig: any) {
     return `<!doctype html>\n${result}`
   })
 
-  // Add this line to watch the 'posts' directory for changes
-  eleventyConfig.addWatchTarget("./posts")
-
   return {
     dir: {
       input: "site",
